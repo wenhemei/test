@@ -1,0 +1,7 @@
+/* pages/reading/reading.wxss */
+.container{
+  width:100vw;
+  height:100vh;
+  background: url('https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1543917307454&           di=496275177c9c47c4c56a2c972559e4bc&imgtype=0&src=http%3A%2F%2Fb-ssl.duitang.com%2Fuploads%2Fitem%2F201607%2F23%2F20160723212158_BRTZr.jpeg');
+  overflow: scroll;
+}

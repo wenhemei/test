@@ -1,0 +1,31 @@
+/* pages/write/write.wxss */
+.container{
+  align-items: center;
+}
+.star_list{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30rpx;
+}
+.star_item{
+  width: 70rpx;
+  height: 70rpx;
+}
+.comment_content{
+  margin-top: 30rpx;
+  width: 100%;
+  background: #fff;
+}
+.content{
+  font-size: 36rpx;
+  padding: 20rpx;
+  width: 100%;
+  box-sizing: border-box;
+}
+.submit{
+  margin-top: 30rpx;
+  width: 100%;
+}
+.btn{
+  width: 40%;
+}

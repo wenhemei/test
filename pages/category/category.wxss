@@ -1,0 +1,61 @@
+/* pages/catogery/category.wxss */
+.navbar_list{
+  display: flex;
+  padding: 0 80rpx;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar_item{
+  padding: 20rpx 0;
+  font-size: 34rpx;
+  font-family: 仿宋;
+}
+.active{
+  border-bottom: 5rpx solid #53de1d;
+  color: #53de1d;
+}
+.recommend{
+  margin-top: 78rpx;
+  background: #fff;
+  padding:20rpx 0;
+}
+.change_box{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 28rpx;
+  color: #ccc;
+  padding: 0 20rpx;
+  font-family: 仿宋;
+  box-sizing: border-box;
+}
+.change_box image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 20rpx;
+}
+.tag_list{
+  width: 100%;
+  margin-top: 30rpx;
+}
+.tag_item{
+  font-size: 24rpx;
+  border: 1rpx solid #ddd;
+  padding: 10rpx 20rpx;
+  float: left;
+  border-radius: 8rpx;
+  margin-left: 10rpx;
+}
+.tag_item:first-child{
+  margin-left: 20rpx;
+}

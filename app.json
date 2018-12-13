@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/category/category",    
+    "pages/index/index",
+    "pages/bookstore/bookstore",
+    "pages/bookshelf/bookshelf",
+    "pages/write/write",
+    "pages/detail/detail",
+    "pages/reading/reading",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "阅读吧",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroudColor": "#eee",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "selectedIconPath": "images/selHome.png",
+        "iconPath": "images/home.png"
+      },
+      {
+        "pagePath": "pages/bookstore/bookstore",
+        "text": "书城",
+        "selectedIconPath": "images/selBookStore.png",
+        "iconPath": "images/bookStore.png"
+      },
+      {
+        "pagePath": "pages/bookshelf/bookshelf",
+        "text": "书架",
+        "selectedIconPath": "images/selBookshelf.png",
+        "iconPath": "images/bookshelf.png"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "text": "我的",
+        "selectedIconPath": "images/selPerson.png",
+        "iconPath": "images/person.png"
+      }
+    ]
+  }
+}

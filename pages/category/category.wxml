@@ -1,0 +1,26 @@
+<!--pages/catogery/category.wxml-->
+<view>
+  <view class='navbar_list'>
+    <view class='navbar_item'>男生</view>
+    <view class='navbar_item'>女生</view>
+    <view class='navbar_item'>出版</view>
+    <view class='navbar_item'>漫画</view>
+  </view>
+  <view class='recommend'>
+    <view class='change_box'>
+      <text>根据阅读兴趣推荐</text>
+      <view>
+        <text>换一换</text>
+        <image src='../../images/change.png'></image>
+      </view>
+    </view>
+    <view class='tag_list clearfix'>
+      <view class='tag_item'>修仙</view>
+      <view class='tag_item'>特种兵</view>
+      <view class='tag_item'>仙侠修真</view>
+      <view class='tag_item'>异能</view>
+      <view class='tag_item'>废柴</view>
+      <view class='tag_item'>仙界</view>
+    </view>
+  </view>
+</view>

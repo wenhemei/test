@@ -1,0 +1,236 @@
+<!--pages/bookstore/bookstore.wxml-->
+<view>
+  <swiper indicator-dots autoplay circular interval="2000" duration="800">
+    <block wx:for="{{imgUrls}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" class='swiper_item'/>
+      </swiper-item>
+    </block>
+  </swiper>
+  <view class='content_main'>
+    <view class='operate_list'>
+      <view class='operate_item'>
+        <image src='../../images/1.png'></image>
+        <text>分类</text>
+      </view>
+      <view class='operate_item'>
+        <image src='../../images/2.png'></image>
+        <text>榜单</text>
+      </view>
+      <view class='operate_item'>
+        <image src='../../images/3.png'></image>
+        <text>会员</text>
+      </view>
+      <view class='operate_item'>
+        <image src='../../images/4.png'></image>
+        <text>完结</text>
+      </view>
+      <view class='operate_item'>
+        <image src='../../images/5.png'></image>
+        <text>出版</text>
+      </view>
+    </view>
+
+    <view class='title_top'>
+      <text class='title'>精品汇聚</text>
+      <text class='load_more'>换一换</text>
+      <image src='../../images/change.png'></image>
+    </view>
+    <view class='imgs_box clearfix'>
+      <view class='img_row clearfix'>
+        <image class='img_col' bindtap="showDetail" src="../../images/book1.jpg"></image>
+        <image class='img_col' src="../../images/book2.jpg"></image>
+        <image class='img_col' src="../../images/book3.jpg"></image>
+        <image class='img_col' src="../../images/book4.jpg"></image>
+        <image class='img_col' bindtap="showDetail" src="../../images/book5.jpg"></image>
+        <image class='img_col' src="../../images/book6.jpg"></image>
+        <image class='img_col' src="../../images/book7.jpg"></image>
+        <image class='img_col' src="../../images/book8.jpg"></image>
+      </view>
+    </view>
+
+    <view class='title_top'>
+      <text class='title'>最好看的书</text>
+      <text class='load_more'>换一换</text>
+      <image src='../../images/change.png'></image>
+    </view>
+    <view class='imgs_box clearfix'>
+      <view class='img_row clearfix'>
+        <image class='img_col' bindtap="showDetail" src="../../images/book1.jpg"></image>
+        <image class='img_col' src="../../images/book2.jpg"></image>
+        <image class='img_col' src="../../images/book3.jpg"></image>
+        <image class='img_col' src="../../images/book4.jpg"></image>
+        <image class='img_col' bindtap="showDetail" src="../../images/book5.jpg"></image>
+        <image class='img_col' src="../../images/book6.jpg"></image>
+        <image class='img_col' src="../../images/book7.jpg"></image>
+        <image class='img_col' src="../../images/book8.jpg"></image>
+      </view>
+    </view>
+
+    <view class='title_top'>
+      <text class='title'>点击上十万的好书</text>
+      <text class='load_more'>换一换</text>
+      <image src='../../images/change.png'></image>
+    </view>
+    <view class='img_box2'>
+      <view class='main_book'>
+        <image src="../../images/book8.jpg"></image>
+        <view class='book_info'>
+          <text class='book_title'>回到唐初当道士</text>
+          <view class='book_abstract'>
+            林雨--回到唐初当道士无弹窗的简介：没有比主角更倒霉的道士了！——我欲度化妖邪，妖邪却无论男女都想吃我。
+          </view>
+          <view class='read_volume'>
+            <text>5</text>
+            <text>6</text>
+            <text>0</text>
+            <text>3</text>
+            <text>3</text>
+            <text>7</text>
+          </view>
+        </view>
+      </view>
+      <view class='book_list clearfix'>
+        <view class='book_item clearfix'>
+          <image src='../../images/book4.jpg'></image>
+          <view>
+            <text class='book_title'>狂天狂女</text>
+            <text class='recommend'>3.3万人推荐</text>
+          </view>
+        </view>
+        <view class='book_item clearfix'>
+          <image src='../../images/book5.jpg'></image>
+          <view>
+            <text class='book_title'>荒烟蔓草的年代</text>
+            <text class='recommend'>1.7万人推荐</text>
+          </view>
+        </view>
+        <view class='book_item clearfix'>
+          <image src='../../images/book6.jpg'></image>
+          <view>
+            <text class='book_title'>快穿之香火成神攻略</text>
+            <text class='recommend'>2.8万人推荐</text>
+          </view>
+        </view>
+        <view class='book_item clearfix'>
+          <image src='../../images/book7.jpg'></image>
+          <view>
+            <text class='book_title'>庶女毒妃</text>
+            <text class='recommend'>126万人推荐</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='recommend_classify clearfix'>
+      <view class='recommend_item'>
+        <view class='recommend_info'>
+          <text>听书专区</text>
+          <text>聆听悦读</text>
+        </view>
+        <view class='recommend_icon' style='background:#1afa29;'>
+          <image src='../../images/headset.png'></image>          
+        </view>
+      </view>
+      <view class='recommend_item'>
+        <view class='recommend_info'>
+          <text>轻小说</text>
+          <text>突破次元壁</text>
+        </view>
+        <view class='recommend_icon' style='background:#edd365;'>
+          <image src='../../images/book-open.png'></image>          
+        </view>
+      </view>
+      <view class='recommend_item'>
+        <view class='recommend_info'>
+          <text>男生最爱</text>
+          <text>热血较量</text>
+        </view>
+        <view class='recommend_icon' style='background:#96caed;'>
+          <image src='../../images/map3.png'></image>          
+        </view>
+      </view>
+      <view class='recommend_item'>
+        <view class='recommend_info'>
+          <text>女生最爱</text>
+          <text>爱恨纠缠</text>
+        </view>
+        <view class='recommend_icon' style='background:#f9afd3;'>
+          <image src='../../images/heart.png'></image>          
+        </view>
+      </view>
+    </view>
+    <view class='title_top'>
+      <text class='title'>出版精品</text>
+      <text class='load_more'>更多 ></text>
+    </view>
+    <view class='img_box2'>
+      <view class='main_book'>
+        <image src="../../images/book8.jpg"></image>
+        <view class='book_info'>
+          <text class='book_title'>回到唐初当道士</text>
+          <view class='book_abstract'>
+            林雨--回到唐初当道士无弹窗的简介：没有比主角更倒霉的道士了！——我欲度化妖邪，妖邪却无论男女都想吃我。
+          </view>
+          <view class='read_volume'>
+            <text>5</text>
+            <text>6</text>
+            <text>0</text>
+            <text>3</text>
+            <text>3</text>
+            <text>7</text>
+          </view>
+        </view>
+      </view>
+      <view class='book_list clearfix'>
+        <view class='book_item clearfix'>
+          <image src='../../images/book4.jpg'></image>
+          <view>
+            <text class='book_title'>狂天狂女</text>
+            <text class='recommend'>3.3万人推荐</text>
+          </view>
+        </view>
+        <view class='book_item clearfix'>
+          <image src='../../images/book5.jpg'></image>
+          <view>
+            <text class='book_title'>荒烟蔓草的年代</text>
+            <text class='recommend'>1.7万人推荐</text>
+          </view>
+        </view>
+        <view class='book_item clearfix'>
+          <image src='../../images/book6.jpg'></image>
+          <view>
+            <text class='book_title'>快穿之香火成神攻略</text>
+            <text class='recommend'>2.8万人推荐</text>
+          </view>
+        </view>
+        <view class='book_item clearfix'>
+          <image src='../../images/book7.jpg'></image>
+          <view>
+            <text class='book_title'>庶女毒妃</text>
+            <text class='recommend'>126万人推荐</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='title_top'>
+      <text class='title'>大家都在搜</text>
+      <text class='load_more'>换一换</text>
+      <image src='../../images/change.png'></image>
+    </view>
+    <view class='imgs_box clearfix'>
+      <view class='img_row clearfix'>
+        <image class='img_col' bindtap="showDetail" src="../../images/book1.jpg"></image>
+        <image class='img_col' src="../../images/book2.jpg"></image>
+        <image class='img_col' src="../../images/book3.jpg"></image>
+        <image class='img_col' src="../../images/book4.jpg"></image>
+        <image class='img_col' bindtap="showDetail" src="../../images/book5.jpg"></image>
+        <image class='img_col' src="../../images/book6.jpg"></image>
+        <image class='img_col' src="../../images/book7.jpg"></image>
+        <image class='img_col' src="../../images/book8.jpg"></image>
+      </view>
+    </view>
+
+
+    
+  </view>
+</view>

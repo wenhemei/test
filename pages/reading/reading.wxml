@@ -1,0 +1,6 @@
+<!--pages/reading/reading.wxml-->
+<view class='container'>
+  <view class='read_box'>
+    <rich-text nodes="{{node}}"></rich-text>
+  </view>
+</view>

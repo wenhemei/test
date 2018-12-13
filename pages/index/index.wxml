@@ -1,0 +1,55 @@
+<!--index.wxml-->
+<view class="container">
+  <movable-area class="move_box">
+    <movable-view  x="{{x}}" y="{{y}}" direction="all" class='move_item' bindtap="changeScenario">
+      <image src='{{modelSrc}}' class='move_img'></image>
+    </movable-view>
+  
+<!-- banner图 -->
+  <swiper indicator-dots autoplay circular interval="2000" duration="800">
+    <block wx:for="{{imgUrls}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" class='swiper_item'/>
+      </swiper-item>
+    </block>
+  </swiper>
+    
+  <view class='title_top'>
+    <text class='title'>推荐</text>
+    <text class='load_more'>>>更多</text>
+  </view>
+  <view class='imgs_box clearfix'>
+    <view class='img_row clearfix'>
+      <image class='img_col' bindtap="showDetail" src="../../images/book1.jpg"></image>
+      <image class='img_col' src="../../images/book2.jpg"></image>
+      <image class='img_col' src="../../images/book3.jpg"></image>
+      <image class='img_col' src="../../images/book4.jpg"></image>
+    </view>
+  </view>
+  <view class='title_top'>
+    <text class='title'>上新</text>
+    <text class='load_more'>>>更多</text>
+  </view>
+  <view class='imgs_box clearfix'>
+     <view class='img_row clearfix'>
+      <image class='img_col' bindtap="showDetail" src="../../images/book1.jpg"></image>
+      <image class='img_col' src="../../images/book2.jpg"></image>
+      <image class='img_col' src="../../images/book3.jpg"></image>
+      <image class='img_col' src="../../images/book4.jpg"></image>
+    </view>
+  </view>
+
+  <view class='title_top'>
+    <text class='title'>最热</text>
+    <text class='load_more'>>>更多</text>
+  </view>
+  <view class='imgs_box clearfix'>
+     <view class='img_row clearfix'>
+      <image class='img_col' bindtap="showDetail" src="../../images/book1.jpg"></image>
+      <image class='img_col' src="../../images/book2.jpg"></image>
+      <image class='img_col' src="../../images/book3.jpg"></image>
+      <image class='img_col' src="../../images/book4.jpg"></image>
+    </view>
+  </view>
+  </movable-area>
+</view>

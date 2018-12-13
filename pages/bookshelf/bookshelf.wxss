@@ -1,0 +1,99 @@
+/* pages/bookshelf/bookshelf.wxss */
+.clearfix::after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.container{
+  width: 100%;
+  background: #fff;
+}
+.cunrrent_book{
+  width: 100%;
+  padding: 30rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  background: url('http://img2.imgtn.bdimg.com/it/u=2304647978,110686248&fm=26&gp=0.jpg')
+}
+.cunrrent_book image{
+  width: 175rpx;
+  height: 267.4rpx;
+  float: left;
+}
+.read_info{
+  float: left;
+  margin-left: 60rpx;
+  min-width: 340rpx;
+}
+.read_book{
+  display: block;
+  font-size: 38rpx;
+  color: #fff;
+}
+.read_to{
+  font-size: 24rpx;
+}
+.read_to text:last-child{
+  margin-left: 20rpx;
+}
+.reader_book{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40rpx;
+  color: #6295df;
+}
+.continue_read{
+  display: flex;
+  justify-content: space-between;
+}
+.continue_read text{
+  font-size: 24rpx;
+}
+.continue_read image{
+  width: 30rpx;
+  height: 30rpx;
+  margin-left: 20rpx;
+}
+
+.book_list{
+  padding: 30rpx;
+}
+.book_item{
+  width: 25%;
+  float: left;
+}
+.book_img,.book_add{
+  width: 150rpx;
+  height: 229.2rpx;
+  display: block;
+  margin-top: 40rpx;
+  box-shadow: 1px 2px 2px rgba(0, 0, 0, 0.2);  
+}
+.book_add{
+  background: #fcfcfc;
+  opacity: .5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.book_add image{
+  width: 50rpx;
+  height: 50rpx;
+}
+.book_title,.book_author{
+  display: block;
+}
+.book_title{
+  width: 90%;
+  font-size: 24rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+  margin-top: 10rpx;
+}
+.book_author{
+  font-size: 22rpx;
+  color: #aaa;
+  margin-top: 10rpx;
+}

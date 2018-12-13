@@ -1,0 +1,32 @@
+<!--pages/bookshelf/bookshelf.wxml-->
+<view class='container'>
+  <view class='cunrrent_book clearfix'>
+    <image src="../../images/book3.jpg" class='book_img' bindtap="continueRead"></image>
+    <view class='read_info' bindtap="continueRead">
+      <text class='read_book'>等花开一春暖心你</text>
+      <view class='reader_book'>
+        <view class='read_to'>
+          <text>读至</text>
+          <text>13.5%</text>
+        </view>
+        <view class='continue_read'>
+          <text>继续阅读</text>
+          <image src='../../images/right_fill.png'></image>
+        </view>
+      </view>
+     
+    </view>
+  </view>
+  <view class='book_list'>
+    <view class='book_item' wx:for="{{books}}" wx:for-item="item" wx:key="key" bindtap="continueRead">
+      <image src="{{item.src}}" class='book_img'></image>
+      <text class='book_title'>{{item.title}}</text>
+      <text class='book_author'>{{item.author}}</text>
+    </view>
+    <view class='book_item'>
+      <view class='book_add'>
+        <image src='../../images/add.png'></image>
+      </view>
+    </view>
+  </view>
+</view>

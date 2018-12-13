@@ -1,0 +1,100 @@
+<!--pages/detail/detail.wxml-->
+<view class='container'>
+  <view class='img_box clearfix'>
+    <view class='img_thumbnail'>
+      <image class='img' src='../../images/book1.jpg'></image>    
+    </view>
+    <view class='img_info'>
+      <text class='title'>人生若只如初见</text>
+      <view>
+        <text class='property'>作者：</text><text class='author'>纳兰容若</text>      
+      </view>
+      <view>
+        <text class='property'>类型：</text><text class='type'>古代言情</text>      
+      </view>
+      <view>
+        <text class='property'>状态：</text><text class='state'>完结</text>      
+      </view>
+      <view>
+        <text class='property'>大小：</text><text class='size'>32万字</text>
+      </view>
+    </view>
+  </view>
+  <view class='row_block'>
+    <view class='abstract_box'>
+      <text class='abstract'>
+        早知道是没有结果的事情,是的,她一早就知道了.她向来冷静自持,偏偏遇到了他.人生若只初相见,她便是她,他亦是他                  -------
+      </text>
+    </view>
+    <view class='row_box clearfix' bindtap="readChapter">
+      <image src='../../images/new.png' class='icon'></image>
+      <text class='latest'>最新</text>
+      <text class='latest_chapters'>第二百一十二章 幸福生活</text>
+      <image src='../../images/right.png' class='icon right_icon'></image>
+    </view>
+    <view class='row_box clearfix' bindtap="showDialogBtn">
+      <image src='../../images/catalog.png' class='icon'></image>
+      <text class='latest'>目录</text>
+      <text class='latest_chapters'>1天前更新</text>
+      <image src='../../images/right.png' class='icon right_icon'></image>
+    </view>
+  </view>
+
+  <view class='interaction_box'>
+    <view class='title_box clearfix'>
+      <text class='title_left'>书友互动</text>
+      <view class='title_right' bindtap="comment"><image src='../../images/write.png' class='title_icon'></image>写评论</view>
+    </view>
+    <view class='info_box'>
+      <view class='info_item'>
+        <text class='info_data'>4.8</text>
+        <text class='info_text'>书籍评分</text>
+      </view>
+      <view class='info_item'>
+        <text class='info_data'>12.2万</text>
+        <text class='info_text'>累计评论</text>
+      </view>
+      <view class='info_item'>
+        <text class='info_data'>122.4万</text>
+        <text class='info_text'>人气值</text>
+      </view>
+    </view>
+    <view class='comment_info'>
+        <view class='comment_author'>
+          <image class='author_portrait' src='../../images/portrait.jpg'></image>
+          <text class='author_name'>小姑娘</text>
+        </view>
+        <text class='comment_content'>
+          纳塔纳埃尔，你要仿效那些手擎火炬为自己照路的人。 不过，还是我们的欲望所至之处，才会有清泉流淌。因为，只有当我            们走近时，那地方才形成存在，只有当我们行进时，景物才在周围逐渐逐渐展现。远在天边，我们一无所见，即使近在眼前，           也仅仅是连续不断而变化不定的....
+        </text>
+    </view>
+    <view class='show_all'>
+      <text>查看全部评论</text>
+    </view>
+  </view>
+
+  <view class='recommend'>
+    <text class='recommend_title'>看过这本书的人还在看</text>
+    <view class='book_list'>
+      <view class='book_item' wx:for="{{books}}" wx:for-item="item" wx:key="key">
+        <image src="{{item.src}}" class='book_img'></image>
+        <text class='book_title'>{{item.title}}</text>
+        <text class='book_author'>{{item.author}}</text>
+      </view>
+    </view>
+  </view>
+
+
+  <view class="modal-dialog" wx:if="{{showModal}}">
+    <view class="modal-content">
+      <view class="modal-input" wx:for="{{category}}" wx:for-index="index" wx:for-item="item" wx:key="key" bindtap="readChapter">
+        <label class='route-tj'>{{item.title}}</label>
+      </view>
+    </view>
+    <!-- 做分页 -->
+    <!-- <view class="modal-footer">
+      <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+      <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+    </view> -->
+  </view>
+</view>
